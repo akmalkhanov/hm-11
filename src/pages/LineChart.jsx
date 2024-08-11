@@ -53,8 +53,8 @@ const LineChart = () => {
       {
         label: "Time Spent on Phone (minutes)",
         data: [
-          10, 30, 0, 0, 0, 0, 5, 20, 30, 10, 50, 10, 30, 5, 30, 30, 0, 0, 20,
-          10, 30, 40, 10, 50,
+          10, 30, 0, 0, 0, 0, 5, 20, 30, 10, 50, 10, 30, 5,
+          30, 30, 0, 0, 20, 10, 30, 40, 10, 50
         ],
         borderColor: "#0ea5e9",
         backgroundColor: "rgba(14, 165, 233, 0.2)",
@@ -101,13 +101,11 @@ const LineChart = () => {
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto p-4 bg-white rounded-lg shadow-md">
+    <div className="w-[1250px] mx-auto p-4 bg-white rounded-lg shadow-md">
       <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">
         Daily Phone Usage
       </h2>
-      <div className="relative h-80">
-        <Line data={data} options={options} />
-      </div>
+      <Line data={data} options={options} />
     </div>
   );
 };
